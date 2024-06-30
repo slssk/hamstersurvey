@@ -1,0 +1,152 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hamster Preference Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Hamster Preference Survey</h1>
+  <p id="description">Thank you for taking the time to answer this survey</p>
+   <img src="https://www.thesprucepets.com/thmb/18Tn4mIgg4NdM7Sa3GeJaL_4Brs=/1500x0/filters:no_upscale():strip_icc()/GettyImages-499157253-580e26cc5f9b58564c740a97.jpg" width="500px" height="300px"style="display: block; margin: 0 auto;">>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information:</legend>
+      <label for="name" id="name-label">Name:<input type="text" id="name" placeholder="Enter your name here" required></label><br>
+      <label for="email" id="email-label">Email:<input type="email" id="email" placeholder="Enter your email here" required></label><br>
+      <label for="age" id="number-label">Age:<input type="number" id="number" placeholder="Enter your age" min="10" max="100" required></label> 
+    </fieldset>
+    <fieldset>
+      <legend>Do you own a Hamster?</legend>
+     Do you own a Hamster?</label>
+      <select id="dropdown" name="ownership">
+        <option value="">Select one</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">Planning</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Would you like to receive hamster essential recommendations?</legend>
+      <input type="radio" id="yes" name="recommendations" value="yes"><label for="yes">Yes</label>
+<input type="radio" id="no" name="recommendations" value="no">
+      <label for="no">No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What type of hamsters would you like to pet?</legend>
+      <input type="checkbox" id="dwarfhamster" name="hamster-type" value="dwarfhamster"><label for="dwarfhamster">Dwarf Hamster</label><br><img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/21-477776_Dwarf-Hamster_WhiteBG_1080x720" width="250px" height="250px"style="display: block; margin: 0 auto;">
+      <input type="checkbox" id="EuropeanHamster" name="hamster-type" value="EuropeanHamster">
+      <label for="EuropeanHamster"> European Hamster</label><br><img src="https://c.files.bbci.co.uk/15E69/production/_113350798_hamster2.jpg" width="250px" height="200px"style="display: block; margin: 0 auto;">
+      <input type="checkbox" id="SyrianGoldenHamster" name="hamster-type" value="SyrianGoldenHamster">
+      <label for="SyrianGoldenHamster"> Syrian Golden Hamster</label><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJ-HhFF5pJXmPbe-b192hMYSTj7DRy-Zz0g&s" width="250px" height="200px"style="display: block; margin: 0 auto;">
+      <input type="checkbox" id="teddybearhamster" name="hamster-type" value="teddybearhamster">
+      <label for="teddybearhamster"> Teddy Bear Hamster</label><br><img src="https://i.pinimg.com/originals/f0/57/f2/f057f24e61cb6294b548164717a9e10f.jpg" width="250px" height="200px"style="display: block; margin: 0 auto;">
+      <input type="checkbox" id="ChineseHamster" name="hamster-type" value="ChineseHamster">
+      <label for="ChineseHamster"> Chinese Hamster</label><br><img src="https://static.wixstatic.com/media/55ba84_133b237fab394387bf9e6eb95ab08819~mv2.png/v1/fill/w_852,h_490,al_c,q_90/55ba84_133b237fab394387bf9e6eb95ab08819~mv2.png" width="250px" height="200px"style="display: block; margin: 0 auto;">
+      <input type="checkbox" id="winterwhitehamster" name="hamster-type" value="winterwhitehamster">
+      <label for="winterwhitehamster"> Winter White Hamster</label><img src="https://preview.redd.it/0yeuebzoljo51.jpg?width=500&format=pjpg&auto=webp&s=00679737e50c6cdf6d9d2c3320c0108f0725493e" width="250px" height="200px"style="display: block; margin: 0 auto;">
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments:</legend>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+    </fieldset>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Times New Roman, sans-serif;
+  background-color: linear-gradient(#b66878, #d49ba7, #fff8f8);
+}
+
+#title {
+  text-align: center;
+  color:#b66878 ;
+}
+
+#description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#survey-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: linear-gradient(#b66878, #d49ba7, #fff8f8);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #b66878;
+}
+
+input[type="radio"], inputinput[type="checkbox"], label {
+  display: inline-block;
+  margin-right: 10px;
+}
+}
+
+select {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #b66878;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #b66878;
+}
+
+#submit {
+  background-color: #b66878;
+  color: #fff;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #00487a;
+}
+
+** end of undefined **
+
